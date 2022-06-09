@@ -1,4 +1,10 @@
+const nextBtn = document.getElementById('next');
+nextBtn.addEventListener('click', nextQuestion);
+const questionTxt = document.getElementById('questiontext');
+const answers = document.getElementById('answers');
+
 var db = null;
+loadDB();
 
 async function loadDB() {
     //häufiger Fehler: Schreibweise von InitSqlJs beachten!
